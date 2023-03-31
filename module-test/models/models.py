@@ -12,4 +12,4 @@ class Customer(models.Model):
     country = fields.Char(string='Country')
     gender = fields.Selection([('male', 'Male'), ('female', 'Female')], string='Gender', default='male')
     day_of_birth = fields.Datetime(string='Day of birth')
-    tags = fields.Selection([('normal', 'Normal'), ('vip', 'Vip')], default='vip', string='Tag')
+    tags = fields.Selection([('normal', 'Normal'), ('vip', 'Vip')], default='normal', string='Tag', required=True)
