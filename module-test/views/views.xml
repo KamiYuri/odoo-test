@@ -6,7 +6,7 @@
       <field name="name">customer.tree</field>
       <field name="model">customer</field>
       <field name="arch" type="xml">
-        <tree string="Customers">
+        <tree string="Customers" banner_route="/module-test/hello">
           <field name="name"/>
           <field name="country"/>
           <field name="gender"/>
