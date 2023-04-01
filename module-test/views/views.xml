@@ -6,13 +6,13 @@
       <field name="name">customer.tree</field>
       <field name="model">customer</field>
       <field name="arch" type="xml">
-        <tree string="Customers">
-          <field name="name"/>
-          <field name="country"/>
-          <field name="gender"/>
-          <field name="tags"/>
-          <field name="day_of_birth"/>
-        </tree>
+        <tree string="Customers" banner_route="/module-test/hello"/>
+<!--          <field name="name"/>-->
+<!--          <field name="country"/>-->
+<!--          <field name="gender"/>-->
+<!--          <field name="tags"/>-->
+<!--          <field name="day_of_birth"/>-->
+<!--        </tree>-->
       </field>
     </record>
 
