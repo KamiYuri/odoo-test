@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+  <t t-name="module_a.client_action" owl="1">
+    <button class="btn btn-primary" t-on-click="redirect_func"> New Orders </button>
+    <div class="h-100">
+      <t t-call="module_a.client_action.callable"/>
+      <div class="m-3">
+        Hi
+      </div>
+    </div>
+  </t>
+
+  <t t-name="module_a.client_action.callable" owl="1">
+    <div class="d-flex flex-nowrap">
+      Callable
+    </div>
+  </t>
+</templates>
