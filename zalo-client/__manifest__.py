@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "module-a",
+    'name': "zalo-client",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'web', 'awesome_gallery'],
+    'depends': ['base'],
 
     # always loaded
     'data': [
@@ -28,11 +28,6 @@
         'views/views.xml',
         'views/templates.xml',
     ],
-    'assets': {
-        'web.assets_backend': [
-            'module-a/static/src/**/*',
-        ],
-    },
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',

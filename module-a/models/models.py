@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields
 
 
-# class module-a(models.Model):
-#     _name = 'module-a.module-a'
-#     _description = 'module-a.module-a'
+class ModuleAModel(models.Model):
+    _name = 'module_a.module_a_model'
+    _description = 'This is my model'
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
+    name = fields.Char(string='Name', required=True)
+    value = fields.Integer(string='Value', required=True)
+    description = fields.Text(string='Description')
+    image_url = fields.Char(string='Image URL')
+
 #     @api.depends('value')
 #     def _value_pc(self):
 #         for record in self:
